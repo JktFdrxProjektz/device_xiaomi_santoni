@@ -358,6 +358,12 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_enc_common
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DT_PATH)/overlay \
+    $(DT_PATH)/overlay-ancient \
+    $(DT_PATH)/overlay-system
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@1.0.vendor \
